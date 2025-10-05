@@ -53,16 +53,6 @@ export const styles = StyleSheet.create({
     alignSelf: 'flex-start', 
     fontWeight: 'bold',
   },
-  input: {
-    backgroundColor: '#FFF',
-    width: '100%',
-    height: 50,
-    borderRadius: 10,
-    paddingHorizontal: 15,
-    fontSize: 16,
-    borderWidth: 1,
-    borderColor: '#ddd',
-  },
   button: {
     backgroundColor: '#FFD700', 
     width: '100%',

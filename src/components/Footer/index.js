@@ -70,7 +70,6 @@ export default function Footer({ isExpanded, onToggle, onClose, navigation, onNa
             </TouchableOpacity>
           </View>
 
-        {/* Lari, os links para as redes sociais são editados aqui */}
           <View style={styles.socialContainer}>
             <Icon name="instagram" onPress={() => handleLinkPress('https://www.instagram.com/salao.ohana/')} size={35} style={styles.socialIcon} />
             <Icon name="facebook-square" onPress={() => handleLinkPress('https://www.facebook.com/salao.ohana/')} size={35} style={styles.socialIcon} />

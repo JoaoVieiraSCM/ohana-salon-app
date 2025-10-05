@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, Alert } from 'react-native';
+import  Input from '../../components/Input';
 import { registerUser } from '../../services/userService';
 import { useAuth } from '../../services/authContext';
 import { useNavigationHandlers } from '../../hookers/useNavigationHandlers';
@@ -52,8 +53,7 @@ function RegisterScreen({ navigation }) {
 
         <View style={styles.inputContainer}>
           <Text style={styles.label}> Nome </Text>
-          <TextInput
-            style={styles.input}
+          <Input
             placeholder="Digite seu nome"
             value={name}
             onChangeText={setName}
@@ -62,36 +62,41 @@ function RegisterScreen({ navigation }) {
 
         <View style={styles.inputContainer}>
           <Text style={styles.label}> Email </Text>
-          <TextInput
-            style={styles.input}
-            placeholder="email@gmail.com"
+          <Input
+            placeholder="Digite seu email"  
+            placeholderTextColor="#999"
+            autoCapitalize="none"
+            textContentType="emailAddress"
+            keyboardType="email-address"
             value={email}
             onChangeText={setEmail}
-            keyboardType="email-address"
           />
+          
         </View>
 
         <View style={styles.inputContainer}>
           <Text style={styles.label}>Senha</Text>
-          <TextInput
-            style={styles.input}
+          <Input
             placeholder="********"
             placeholderTextColor="#999"
+            secureTextEntry={true}
+            autoCapitalize="none"
+            textContentType="password"
             value={password}
             onChangeText={setPassword}
-            secureTextEntry={true}
           />
         </View>
 
         <View style={styles.inputContainer}>
           <Text style={styles.label}>Confirmar senha</Text>
-          <TextInput
-            style={styles.input}
+          <Input
             placeholder="********"
             placeholderTextColor="#999"
-            value={confirmPassword}
-            onChangeText={setConfirmPassword}
             secureTextEntry={true}
+            autoCapitalize="none"
+            textContentType="password"
+            value={password}
+            onChangeText={setConfirmPassword}
           />
         </View>
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, Image, Alert, ActivityIndicator } from 'react-native';
+import  Input from '../../components/Input';
 import { useNavigationHandlers } from '../../hookers/useNavigationHandlers';
 import { useAuth } from '../../services/authContext';
 import { styles } from './styles';
@@ -45,24 +46,27 @@ function LoginScreen({ navigation }) {
 
         <View style={styles.inputContainer}>
           <Text style={styles.label}> Email </Text>
-          <TextInput
-            style={styles.input}
-            placeholder="email@gmail.com"
+          <Input
+            placeholder="Digite seu email"
+            placeholderTextColor="#999"
             value={email}
             onChangeText={setEmail}
             keyboardType="email-address"
+            autoCapitalize="none"
+            textContentType="emailAddress"
           />
         </View>
 
         <View style={styles.inputContainer}>
           <Text style={styles.label}>Senha</Text>
-          <TextInput
-            style={styles.input}
+          <Input
             placeholder="********"
             placeholderTextColor="#999"
+            secureTextEntry={true}
+            autoCapitalize="none"
+            textContentType="password"
             value={password}
             onChangeText={setPassword}
-            secureTextEntry={true}
           />
         </View>
 
