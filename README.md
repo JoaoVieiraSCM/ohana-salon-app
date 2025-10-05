@@ -43,5 +43,3 @@ This is a curricular project developed in **React Native**, designed to enhance 
 4. Scan the QR Code with the Expo Go app on your mobile device.
 
 ---
-
-Developed with 💜 for Ohana Salon.
