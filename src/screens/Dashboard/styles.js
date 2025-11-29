@@ -44,9 +44,9 @@ export const styles = StyleSheet.create({
     borderRadius: 10,
     padding: 15,
     marginRight: 15,
-    width: 150,
-    height: 100,
-    justifyContent: 'center',
+    width: 160,
+    height: 120,
+    justifyContent: 'space-between',
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.1,
@@ -58,9 +58,31 @@ export const styles = StyleSheet.create({
     fontSize: 16,
   },
   appointmentTime: {
-    fontSize: 14,
+    fontSize: 12,
     color: '#666',
     marginTop: 5,
+  },
+  statusBadge: {
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 12,
+    alignSelf: 'flex-start',
+    marginTop: 8,
+  },
+  statusPendente: {
+    backgroundColor: '#FFD700',
+  },
+  statusConfirmado: {
+    backgroundColor: '#28A745',
+  },
+  statusCancelado: {
+    backgroundColor: '#DC3545',
+  },
+  statusText: {
+    fontSize: 10,
+    fontWeight: 'bold',
+    color: '#000',
+    textTransform: 'uppercase',
   },
   emptyContainer: {
     paddingHorizontal: 20,

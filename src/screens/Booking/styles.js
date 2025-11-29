@@ -88,6 +88,24 @@ const styles = StyleSheet.create({
     backgroundColor: '#e9ecef',
     color: '#6c757d',
   },
+  pickerContainer: {
+    width: '100%',
+    borderWidth: 1,
+    borderColor: '#ddd',
+    borderRadius: 10,
+    marginBottom: 5,
+    backgroundColor: '#FFF',
+    overflow: 'hidden',
+  },
+  picker: {
+    width: '100%',
+    height: 50,
+  },
+  buttonText: {
+    color: '#000',
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
 });
 
 export default styles;

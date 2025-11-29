@@ -8,17 +8,18 @@ export const styles = StyleSheet.create({
     backgroundColor: '#000',
   },
    headerText: {
-    fontSize: 32,
+    fontSize: 28,
     fontWeight: 'bold',
     color: '#fff', 
-    marginBottom: 10,
+    marginBottom: 15,
     letterSpacing: 1, 
   },
   card: {
     backgroundColor: '#FFFFFF',
     width: '90%',
     borderRadius: 20, 
-    padding: 25,
+    padding: 20,
+    paddingBottom: 20,
     alignItems: 'center', 
     shadowColor: '#000', 
     shadowOffset: {
@@ -30,14 +31,14 @@ export const styles = StyleSheet.create({
     elevation: 5,
   },
   title: {
-    fontSize: 26,
+    fontSize: 24,
     fontWeight: 'bold',
     color: '#000',
-    marginBottom: 30,
+    marginBottom: 15,
   },
   inputContainer: {
     width: '100%',
-    marginBottom: 20,
+    marginBottom: 12,
   },
   label: {
     fontSize: 14,
@@ -49,7 +50,7 @@ export const styles = StyleSheet.create({
   input: {
     backgroundColor: '#FFF',
     width: '100%',
-    height: 50,
+    height: 45,
     borderRadius: 10,
     paddingHorizontal: 15,
     fontSize: 16,
@@ -60,11 +61,11 @@ export const styles = StyleSheet.create({
   button: {
     backgroundColor: '#FFD700', 
     width: '100%',
-    height: 50,
+    height: 45,
     borderRadius: 10,
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 10,
+    marginTop: 5,
   },
   buttonText: {
     color: '#000', 
@@ -72,7 +73,7 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   registerContainer: {
-      marginTop: 20,
+      marginTop: 12,
   },
   registerText: {
       fontSize: 14,

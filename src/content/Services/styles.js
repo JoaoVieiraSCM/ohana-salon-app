@@ -5,6 +5,9 @@ export const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#EAEAEA',
+        paddingHorizontal: 0,
+        paddingBottom: 50,
+        width: '100%',
     },
     headerTitle: {
         fontSize: 28,
@@ -23,5 +26,50 @@ export const styles = StyleSheet.create({
     sliderText: {
         color: '#FFFFFF',
         fontSize: 24,
-    }
+    },
+    addButton: {
+        backgroundColor: '#FFD700',
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: 15,
+        marginHorizontal: 10,
+        marginVertical: 20,
+        marginBottom: 60,
+        borderRadius: 10,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.25,
+        shadowRadius: 3.84,
+        elevation: 5,
+        width: '95%',
+        alignSelf: 'center',
+    },
+    addButtonText: {
+        color: '#000',
+        fontSize: 18,
+        fontWeight: 'bold',
+        marginLeft: 10,
+    },
+    emptyContainer: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingVertical: 60,
+        paddingHorizontal: 20,
+    },
+    emptyTitle: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: '#666',
+        marginTop: 20,
+        marginBottom: 10,
+        textAlign: 'center',
+    },
+    emptyDescription: {
+        fontSize: 16,
+        color: '#999',
+        textAlign: 'center',
+        lineHeight: 22,
+    },
 });

@@ -9,6 +9,7 @@ import { styles } from './styles';
 function RegisterScreen({ navigation }) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
@@ -26,7 +27,12 @@ function RegisterScreen({ navigation }) {
     }
 
     try {
-      const newUser = await registerUser({ nome: name, email, senha: password });
+      const newUser = await registerUser({ 
+        nome: name, 
+        email, 
+        telefone: phone,
+        senha: password 
+      });
       await login(email, password);
 
       Alert.alert(
@@ -75,6 +81,18 @@ function RegisterScreen({ navigation }) {
         </View>
 
         <View style={styles.inputContainer}>
+          <Text style={styles.label}> Telefone </Text>
+          <Input
+            placeholder="(11) 99999-9999"  
+            placeholderTextColor="#999"
+            keyboardType="phone-pad"
+            textContentType="telephoneNumber"
+            value={phone}
+            onChangeText={setPhone}
+          />
+        </View>
+
+        <View style={styles.inputContainer}>
           <Text style={styles.label}>Senha</Text>
           <Input
             placeholder="********"
@@ -95,7 +113,7 @@ function RegisterScreen({ navigation }) {
             secureTextEntry={true}
             autoCapitalize="none"
             textContentType="password"
-            value={password}
+            value={confirmPassword}
             onChangeText={setConfirmPassword}
           />
         </View>

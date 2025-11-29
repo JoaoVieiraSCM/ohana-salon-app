@@ -9,6 +9,8 @@ import LoginScreen from './src/screens/Login';
 import RegisterScreen from './src/screens/Register';
 import DashboardScreen from './src/screens/Dashboard';
 import BookingScreen from './src/screens/Booking';
+import CreateServiceScreen from './src/screens/CreateService';
+import EditServiceScreen from './src/screens/EditService';
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +23,8 @@ function RootNavigator() {
         <>
           <Stack.Screen name="Dashboard" component={DashboardScreen} options={{ headerShown: false }} />
           <Stack.Screen name="Booking" component={BookingScreen} options={{ title: 'Fazer Agendamento' }} />
+          <Stack.Screen name="CreateService" component={CreateServiceScreen} options={{ title: 'Adicionar Serviço' }} />
+          <Stack.Screen name="EditService" component={EditServiceScreen} options={{ title: 'Editar Serviço' }} />
           <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
         </>
       ) : (
