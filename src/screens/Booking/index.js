@@ -107,11 +107,9 @@ function BookingScreen({ navigation, route }) {
 
     const dataFormatada = date.toISOString().slice(0, 19);
 
-    // usuarioId = criador do serviço (funcionário)
-    // clienteId = quem está agendando (cliente)
     const newAppointment = {
       clienteId: parseInt(user.id),
-      usuarioId: parseInt(servicoSelecionado.usuarioId || servicoSelecionado.id), // Funcionário que oferece o serviço
+      usuarioId: parseInt(servicoSelecionado.usuarioId || servicoSelecionado.id),
       servicoId: parseInt(servicoSelecionado.id),
       dataHora: dataFormatada,
       status: 'pendente'
@@ -133,7 +131,6 @@ function BookingScreen({ navigation, route }) {
     } catch (error) {
       console.error('❌ Erro no agendamento:', error);
       
-      // Tratar diferentes tipos de erro
       if (error.message && error.message.includes('Funcionários não podem agendar')) {
         Alert.alert(
           'Agendamento Não Permitido',
