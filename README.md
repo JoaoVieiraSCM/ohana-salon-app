@@ -21,7 +21,6 @@ This is a curricular project developed in **React Native**, designed to enhance 
 - [React Native](https://reactnative.dev/)
 - [Expo](https://expo.dev/)
 - [React Navigation](https://reactnavigation.org/)
-- [MongoDB](https://www.mongodb.com/) (*planned*)
 
 ---
 
